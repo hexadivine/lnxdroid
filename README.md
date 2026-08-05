@@ -3,9 +3,14 @@
 - We required below packages in termux.
 
 ```
-pkg update && pkg upgrade -y
-pkg install x11-repo proot-distro termux-x11-nightly -y
+pkg update
+pkg upgrade
+pkg install x11-repo
+pkg install termux-x11-nightly proot-distro
 ```
+
+- Download and install termux x11
+https://github.com/termux/termux-x11/releases/download/nightly/termux-x11-universal-debug.apk
 
 ## Troubleshooting for future error
 
