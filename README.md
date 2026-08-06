@@ -79,12 +79,21 @@ pd install kali
 - Install the app from here - https://github.com/termux/termux-x11/releases/tag/nightly
 - After installing open and keep it running in the background
 
+## Install XFCE4
+
+```
+pd login --bind /data/data/com.termux/files/usr/tmp:/tmp debian <<EOF
+useradd hexadivine -ms /bin/bash
+apt install xfce4 dbus-x11
+EOF
+```
+
 # Setup GUI
 
 - open new terminal to start termux-x11 (make sure termux-x11 app is running)
 
 ```
-termux-x11 :0
+termux-x11 :0 -legacy-drawing &
 ```
 
 - After running you should see blank screen in termux-x11 app
