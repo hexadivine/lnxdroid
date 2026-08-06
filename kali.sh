@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p $PREFIX/etc/proot-distro
 echo -e 'DISTRO_NAME="kali"\nTARBALL_URL["aarch64"]="https://kali.download/nethunter-images/current/rootfs/kali-nethunter-rootfs-full-arm64.tar.xz"' > $PREFIX/etc/proot-distro/kali.sh
 pd install kali
 
